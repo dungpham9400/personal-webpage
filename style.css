@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/moon.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: rgb(223, 211, 53);
+    color: #000;
+}
+
+ul li.active a {
+    background-color: rgb(101, 151, 226);
+    color:#000;
+}
+
+
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.weather {
+    color: #fff;
+    
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.title h2 {
+    color:aquamarine;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.btn {
+    border: 2px solid #8A2BE2;
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: #40c9a2;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: rgba(235, 88, 186, 0.863);
+    color: #000;
+}
+
+.slogan {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.slogan h3 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Century Gothic;
+}
+
+
+
+
+#about .container {
+    flex-direction:row-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 100px 20px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h1 {
+    font-size: 2rem;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#about .col-right h1 span {
+    font-size: 2.5rem;
+	color: crimson;
+}
+
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-bottom: 20px;
+}
+
+.col-right .cta {
+    background-color: yellow;
+	color: black;
+    padding: 5px 30px;
+    border: 2px groove;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+#about .about .col-left .about-img {
+    position: relative;
+    border: 10px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 60vh;
+    }
+    .product-col-left{
+        height: 121.5vh;
+    }
+}
